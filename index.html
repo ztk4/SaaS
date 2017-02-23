@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>4D SaaS - Zachary Kaplan</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/dark.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,73 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <!-- Title Slide -->
+          <blockquote style="font-style: normal">
+            <h1>Things to Make and Do in the Fourth Dimension</h1>
+            <p style="color: #af4242">~ Matt Parker</p>
+          </blockquote>
+
+          <br />
+          <p style="color: gray" class="fragment">~ Zachary Kaplan</p>
+        </section>
+        <section>
+          <section>
+            <!-- About Matt Parker -->
+            <h2 class="fragment">Who&rsquo;s Matt Parker?</h2>
+
+            <br /><br /><br />
+            <div class="fragment" style="margin: auto; display: inline-block;">
+              <div style="float: left">
+                <img alt="Matt Parker" src="http://standupmaths.com/wp-content/themes/standupmaths/img/mattparker-portrait.jpg" />
+              </div>
+              <div style="float: left; padding-left: 3em; padding-top: 1.5em; text-align: left;">
+                <div>~ Standup Mathematician</div>
+                <div>~ London Mathematical Society Popular Lecturer</div>
+                <div>~ Founder of <a href="http://www.mathsjam.com">Maths Jam</a></div>
+              </div>
+            </div>
+          </section>
+          <section data-background-image="res/YouTube.png">
+            <!-- YouTube Channel -->
+            <div class="shadowbox">
+              <h2>Standup Maths</h2>
+              <a href="https://youtube.com/user/standupmaths">youtube.com/user/standupmaths</a>
+            </div>
+          </section>
+          <section data-background-iframe="http://mathsjam.com">
+            <!-- Maths Jam -->
+            <div class="shadowbox">
+              <h2>Maths Jam</h2>
+              <a href="http://mathjams.com">mathjams.com</a>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <!-- Things to Make and Do in the Fourth Dimension -->
+            <h2>Things to Make and Do in the Fourth Dimension</h2>
+          </section>
+          <section data-background-image="http://makeanddo4d.com/wp-content/themes/twentythirteen-child/images/cover-us.jpg" data-background-size="contain">
+            <!-- The Book -->
+          </section>
+          <section>
+            <!-- Elements of Presentation -->
+            <h2>Successful Elements of Presentation</h2>
+            <br /><br /><br />
+            <p>Makes Math Fun &amp; Tangible</p>
+            <p>Engages Audience</p>
+            <p>Quick Witted Ad Lib</p>
+          </section>
+          <section>
+            <iframe height="720px" width="1280px" src="https://www.youtube.com/embed/1wAaI_6b9JE?rel=0&amp;controls=1&amp;showinfo=0&amp;start=1486&amp;iv_load_policy=3&amp;end=1598" allowfullscreen>
+            </iframe>
+          </section>
+          <section>
+            <iframe height="720px" width="1280px" src="https://www.youtube.com/embed/1wAaI_6b9JE?rel=0&amp;controls=1&amp;showinfo=0&amp;start=1922&amp;iv_load_policy=3&amp;end=2030" allowfullscreen>
+            </iframe>
+          </section>
+        </section>
 			</div>
 		</div>
 
@@ -36,6 +101,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+        controls: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
@@ -43,7 +109,10 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+
+        width: 1920,
+        height: 1080,
 			});
 		</script>
 	</body>
