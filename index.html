@@ -1,52 +1,136 @@
 <!doctype html>
 <html>
 	<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title>reveal.js - The HTML Presentations Framework</title>
+		<title>4D SaaS - Zachary Kaplan</title>
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/dark.css">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <!-- Title Slide -->
+          <blockquote style="font-style: normal">
+            <h1>Things to Make and Do in the Fourth Dimension</h1>
+            <p style="color: #af4242">~ Matt Parker</p>
+          </blockquote>
 
-			<header>
+          <br />
+          <p style="color: gray" class="fragment">~ Zachary Kaplan</p>
+        </section>
+        <section>
+          <section>
+            <!-- About Matt Parker -->
+            <h2 class="fragment">Who&rsquo;s Matt Parker?</h2>
 
-				<h1>reveal.js</h1>
-				<p>
-					The HTML Presentation Framework &mdash; Site coming soon
-				</p>
-
-			</header>
-
-			<footer>
-
-				<p>
-					<a href="http://lab.hakim.se/reveal-js">Try the demo</a>
-					<a href="https://github.com/hakimel/reveal.js/releases">Download</a>
-				</p>
-
-			</footer>
-
+            <br />
+            <div class="fragment" style="margin: auto; display: inline-block;">
+              <div style="float: left">
+                <img alt="Matt Parker" src="http://standupmaths.com/wp-content/themes/standupmaths/img/mattparker-portrait.jpg" />
+              </div>
+              <div style="float: left; padding-left: 3em; padding-top: 1.5em; text-align: left;">
+                <h4>~ Standup Mathematician</h4>
+                <h4>~ London Mathematical Society Popular Lecturer</h4>
+                <h4>~ Founder of <a href="http://www.mathsjam.com">Maths Jam</a></h4>
+              </div>
+            </div>
+          </section>
+          <section data-background-image="res/YouTube.png">
+            <!-- YouTube Channel -->
+            <div class="shadowbox">
+              <h2>Standup Maths</h2>
+              <a href="https://youtube.com/user/standupmaths">youtube.com/user/standupmaths</a>
+            </div>
+          </section>
+          <section data-background-iframe="http://mathsjam.com">
+            <!-- Maths Jam -->
+            <div class="shadowbox">
+              <h2>Maths Jam</h2>
+              <a href="http://mathjams.com">mathjams.com</a>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <!-- Things to Make and Do in the Fourth Dimension -->
+            <h2>Things to Make and Do in the Fourth Dimension</h2>
+          </section>
+          <section data-background-image="http://makeanddo4d.com/wp-content/themes/twentythirteen-child/images/cover-us.jpg" data-background-size="contain">
+            <!-- The Book -->
+          </section>
+          <section>
+            <!-- Elements of Presentation -->
+            <h2>Successful Elements of Presentation</h2>
+            <br />
+            <div style="width: 100%">
+              <div style="float: left; width: 50%">
+                <img alt="Worlds Nerdiest Kickline" src="res/WorldsNerdiestKickline.png" />
+              </div>
+              <div style="float: left; padding-top: 7em; padding-left: 2em;">
+                <h4>Makes Math Fun &amp; Tangible</h4>
+                <br />
+                <h4>Engages Audience</h4>
+                <br />
+                <h4>Quick Witted Ad Lib</h4>
+              </div>
+            </div>
+          </section>
+          <section>
+            <!-- Clip #1 -->
+            <iframe height="720px" width="1280px" src="https://www.youtube.com/embed/1wAaI_6b9JE?rel=0&amp;controls=1&amp;showinfo=0&amp;start=1486&amp;iv_load_policy=3&amp;end=1598" allowfullscreen>
+            </iframe>
+          </section>
+          <section>
+            <!-- Clip #2 -->
+            <iframe height="720px" width="1280px" src="https://www.youtube.com/embed/1wAaI_6b9JE?rel=0&amp;controls=1&amp;showinfo=0&amp;start=1922&amp;iv_load_policy=3&amp;end=2030" allowfullscreen>
+            </iframe>
+          </section>
+        </section>
+        <section>
+          <!-- Conclusion/Thanks -->
+          <div class="fragment">
+            <h1>Thank You!</h1>
+            Self Link: <a href="http://ztk4.github.io/SaaS">ztk4.github.io/SaaS</a>
+          </div>
+			</div>
 		</div>
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-		  ga('create', 'UA-43375306-1', 'revealjs.com');
-		  ga('send', 'pageview');
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+        controls: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				],
+
+        width: 1920,
+        height: 1080,
+			});
 		</script>
 	</body>
 </html>
